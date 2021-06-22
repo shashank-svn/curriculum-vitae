@@ -1,0 +1,43 @@
+.container {
+  min-width: 100%;
+
+  /* The progress container (grey background) */
+  .progress-container {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 5px;
+  }
+
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+    height: 5px;
+    background: #eba63f;
+    width: 0%;
+  }
+
+  #cover {
+    /* The image used */
+    background-image: url("../assets/images/background.jpeg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    overflow: hidden;
+
+    .overlay {
+      background-color: #000000;
+      opacity: 0.5;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

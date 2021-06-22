@@ -1,0 +1,94 @@
+.about-container {
+  background-color: #ffffff;
+  padding: 30px;
+
+  .header {
+    font-family: "Poppins", sans-serif;
+    color: #eba63f;
+    letter-spacing: 2px;
+    line-height: 1.25;
+    text-transform: uppercase;
+  }
+
+  .subHeader {
+    font-family: "Poppins", sans-serif;
+    color: #313131;
+    line-height: 1.25;
+    font-weight: 600;
+  }
+
+  .about-content-row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .aboutDesc {
+    font-family: "Lora", sans-serif;
+    color: #6e6e6e;
+    font-weight: 400;
+    margin-top: 30px;
+  }
+
+  .profile-pic {
+    height: 150px;
+    width: 150px;
+  }
+
+  .getInTouchBtn {
+    color: #eba63f;
+    border: 2px solid #eba63f;
+    background-color: #ffffff;
+  }
+
+  .getMyCvBtn {
+    color: #ffffff;
+    background-color: #eba63f;
+  }
+
+  .appIconsRow {
+    margin-top: 20px;
+  }
+
+  .appIcon {
+    color: #eba63f;
+    font-size: 25px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .header {
+      font-size: 16px;
+    }
+    .subHeader {
+      font-size: 20px;
+    }
+    .aboutDesc {
+      font-size: 18px;
+      line-height: 2rem;
+    }
+    .getInTouchBtn,
+    .getMyCvBtn {
+      padding: 10px auto 10px auto;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .header {
+      font-size: 20px;
+    }
+    .subHeader {
+      font-size: 25px;
+    }
+
+    .aboutDesc {
+      font-size: 20px;
+      line-height: 3rem;
+    }
+
+    .getInTouchBtn,
+    .getMyCvBtn {
+      padding: 20px;
+    }
+  }
+}

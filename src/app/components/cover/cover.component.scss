@@ -1,0 +1,121 @@
+.cover-container {
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+
+  .container-row {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .cover-intro {
+    h1 {
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    line-height: 1.071;
+    text-shadow: 0px 11px 10px rgb(0 0 0);
+      }
+
+      p {
+        font-family: "Lora", sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        color: #ffffff;
+        text-shadow: 0 0 10px #343434;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .cover-intro {
+      h1 {
+        font-size: 25px;
+      }
+
+      p {
+        font-size: 10px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 481px) {
+    .cover-intro {
+      h1 {
+        font-size: 40px;
+      }
+      .skillsDiv {
+
+        div:first-child:before {
+          content: "|";
+          text-align: center;
+          display: inline-block;
+          padding: 2px 12px 0px 0px;
+          color: rgba(255, 255, 255, 0.3);
+        }
+
+        div:after {
+          content: "|";
+          text-align: center;
+          display: inline-block;
+          padding: 2px 0px 0px 12px;
+          color: rgba(255, 255, 255, 0.3);
+        }
+        p {
+          font-size: 15px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+
+
+.scroll-down
+{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.scroll-down span:nth-child(2)
+{
+    animation-delay: -0.2s;
+}
+.scroll-down span:nth-child(3)
+{
+    animation-delay: -0.4s;
+}
+.scroll-down span
+{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+@keyframes animate
+{
+    0%
+  {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%
+  {
+        opacity: 1;
+    }
+    100%
+  {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+}
+
+
