@@ -1,0 +1,35 @@
+<div class="skills-container">
+  <div class="row justify-content-center">
+    <div class="col-12 d-flex justify-content-center">
+      <h5 class="header">Professional Skills</h5>
+    </div>
+    <div class="col-12 d-flex justify-content-center">
+      <h5 class="techDesc description">
+        My technical skills are HTML5, CSS3, Javascript, Typescript, Angular and
+        Ionic Framework.
+      </h5>
+    </div>
+    <div class="col-12 col-md-6 col-xl-4 col-ls-4" *ngFor="let skill of skills">
+      <!-- <div class="progress" [ngClass] = "skill?.loadingIndex"> <span class="progress-left"> <span class="progress-bar"></span> </span> <span class="progress-right"> <span class="progress-bar"></span> </span>
+        <div class="progress-value">
+          <span class="skillName">{{skill?.name}}</span>
+          <span class="skillRate">{{skill?.selfAppraisal}}% </span>
+        </div>
+    </div> -->
+      <div class="popOver">{{skill?.name}}</div>
+      <div class="arrow-down"></div>
+      <div class="progress">
+        <div
+          class="progress-bar progress-bar-striped progress-bar-animated"
+          role="progressbar"
+          aria-valuenow="75"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          [ngStyle]="{ width: skill?.selfAppraisal + '%' }"
+        >
+          {{ skill?.selfAppraisal }}%
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

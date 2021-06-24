@@ -2,14 +2,6 @@
   background-color: #ffffff;
   padding: 30px;
 
-  .header {
-    font-family: "Poppins", sans-serif;
-    color: #eba63f;
-    letter-spacing: 2px;
-    line-height: 1.25;
-    text-transform: uppercase;
-  }
-
   .subHeader {
     font-family: "Poppins", sans-serif;
     color: #313131;
@@ -22,12 +14,6 @@
     margin-bottom: 20px;
   }
 
-  .aboutDesc {
-    font-family: "Lora", sans-serif;
-    color: #6e6e6e;
-    font-weight: 400;
-    margin-top: 30px;
-  }
 
   .profile-pic {
     height: 150px;
@@ -55,15 +41,8 @@
   }
 
   @media only screen and (max-width: 768px) {
-    .header {
-      font-size: 16px;
-    }
     .subHeader {
       font-size: 20px;
-    }
-    .aboutDesc {
-      font-size: 18px;
-      line-height: 2rem;
     }
     .getInTouchBtn,
     .getMyCvBtn {
@@ -74,16 +53,8 @@
   }
 
   @media only screen and (min-width: 768px) {
-    .header {
-      font-size: 20px;
-    }
     .subHeader {
       font-size: 25px;
-    }
-
-    .aboutDesc {
-      font-size: 20px;
-      line-height: 3rem;
     }
 
     .getInTouchBtn,

@@ -5,16 +5,18 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { CoverComponent } from './components/cover/cover.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     ContactComponent,
-    CoverComponent
+    CoverComponent,
+    SkillsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
