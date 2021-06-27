@@ -1,9 +1,8 @@
 .about-container {
   background-color: #ffffff;
-  padding: 30px;
+  padding: 20px;
 
   .subHeader {
-    font-family: "Poppins", sans-serif;
     color: #313131;
     line-height: 1.25;
     font-weight: 600;
@@ -21,23 +20,39 @@
   }
 
   .getInTouchBtn {
-    color: #eba63f;
-    border: 2px solid #eba63f;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
     background-color: #ffffff;
   }
 
   .getMyCvBtn {
     color: #ffffff;
-    background-color: #eba63f;
+    background-color: var(--primary-color);
   }
 
   .appIconsRow {
     margin-top: 20px;
   }
 
-  .appIcon {
-    color: #eba63f;
-    font-size: 25px;
+  .personIcon {
+    position: relative;
+    top: 3px;
+  }
+
+  .bioDataContainer {
+    position: relative;
+    left: 6px;
+    margin-bottom: 20px;
+
+    .bioDataRow {
+      .bio-val-col {
+        padding: 10px 0px 10px 15px;
+        border-left: 2px solid var(--primary-color);
+      }
+      .bio-key-col {
+        padding: 10px 15px 10px 0px;
+      }
+    }
   }
 
   @media only screen and (max-width: 768px) {
@@ -52,7 +67,7 @@
     }
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 769px) {
     .subHeader {
       font-size: 25px;
     }

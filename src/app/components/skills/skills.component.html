@@ -5,19 +5,19 @@
     </div>
     <div class="col-12 d-flex justify-content-center">
       <h5 class="techDesc description">
-        My technical skills are HTML5, CSS3, Javascript, Typescript, Angular and
+        My technical skills are HTML5, CSS3, Javascript, Typescript, Bootstrap, Angular and
         Ionic Framework.
       </h5>
     </div>
-    <div class="col-12 col-md-6 col-xl-4 col-ls-4" *ngFor="let skill of skills">
+    <div class="col-12 col-md-6 col-lg-4 col-xl-4" *ngFor="let skill of skills">
       <!-- <div class="progress" [ngClass] = "skill?.loadingIndex"> <span class="progress-left"> <span class="progress-bar"></span> </span> <span class="progress-right"> <span class="progress-bar"></span> </span>
         <div class="progress-value">
           <span class="skillName">{{skill?.name}}</span>
           <span class="skillRate">{{skill?.selfAppraisal}}% </span>
         </div>
     </div> -->
-      <div class="popOver">{{skill?.name}}</div>
-      <div class="arrow-down"></div>
+      <div class="popover" [ngStyle] = "{ left: (skill?.selfAppraisal - 12) + '%'}">{{skill?.name}}</div>
+      <div class="arrow-down" [ngStyle] = "{ left: (skill?.selfAppraisal - 10) + '%'}"></div>
       <div class="progress">
         <div
           class="progress-bar progress-bar-striped progress-bar-animated"

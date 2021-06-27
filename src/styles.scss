@@ -1,35 +1,54 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  /* You can add global styles to this file, and also import other style files */
 
-body {
-  background-color: #2e2e2e;
-}
+  --primary-color: #eba63f;
 
-.header {
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 2px;
-  line-height: 1.25;
-  text-transform: uppercase;
-  color: #eba63f;
-  font-size: 20px;
-}
-
-.description {
-  font-family: "Lora", sans-serif;
-  color: #6e6e6e;
-  font-weight: 400;
-  margin-top: 20px;
-}
-
-@media only screen and (max-width: 768px) {
-  .description {
-    font-size: 18px;
-    line-height: 2rem;
+  body {
+    background-color: #2e2e2e;
+    font-family: "Poppins", sans-serif;
   }
-}
 
-@media only screen and (min-width: 768px) {
+  .header {
+    letter-spacing: 2px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+
   .description {
-    font-size: 20px;
-    line-height: 3rem;
+    color: #6e6e6e;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+
+  .fontAwesomeIcon {
+    color: var(--primary-color);
+  }
+
+  @media only screen and (max-width: 768px) {
+    .header {
+      font-size: 18px;
+    }
+    .description {
+      font-size: 16px;
+      line-height: 2rem;
+    }
+    .fontAwesomeIcon {
+      font-size: 25px;
+    }
+  }
+
+  @media only screen and (min-width: 769px) {
+    .header {
+      font-size: 20px;
+    }
+    .description {
+      font-size: 20px;
+      line-height: 3rem;
+    }
+    .fontAwesomeIcon {
+      font-size: 35px;
+    }
   }
 }

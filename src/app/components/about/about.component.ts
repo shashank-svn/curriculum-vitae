@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+interface ProfileData {
+  key: string,
+  value: string
+}
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -7,9 +11,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
+  profile: ProfileData[];
   constructor() { }
 
   ngOnInit() {
+    this.profile = [
+      {
+        key: "Name",
+        value: "Shashank S V N"
+      }, {
+        key: "Birthday",
+        value: "6th March, 1997"
+      }, {
+        key: "Place of Birth",
+        value: "Mysore"
+      }, {
+        key: "Nationality",
+        value: "India"
+      }
+    ]
   }
 
   openSocialApp(targetApp: string) {
@@ -20,6 +40,10 @@ export class AboutComponent implements OnInit {
     } else if(targetApp === 'facebook') {
       window.open('https://www.facebook.com/michel.shashank', '_blank')
     }
+  }
+
+  openMyCv() {
+    window.open('assets/files/SHASHANK_CV.pdf', '_blank')
   }
 
 }

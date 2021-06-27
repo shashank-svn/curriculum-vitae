@@ -1,0 +1,77 @@
+<div class="experience-container">
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <h5 class="header">Work History</h5>
+    </div>
+    <div class="col">
+      <div
+        class="row workHistoryContainer"
+        *ngFor="let history of workHistories"
+      >
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="row headerBox">
+            <div class="col-12 d-flex justify-content-md-end role">
+              <i class="fas fa-briefcase briefcaseIcon fontAwesomeIcon"></i>
+              <h5>{{ history?.role }}</h5>
+            </div>
+            <div class="col-12 d-flex justify-content-md-end companyName">
+              {{ history?.company }}
+            </div>
+            <div class="col-12 d-flex justify-content-md-end period">
+              {{ history?.period }}
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="row contentBox">
+            <div class="col-12 projectName">
+              <h5>{{ history?.projectName }}</h5>
+            </div>
+            <div class="col-12 projectDesc">
+              <p>{{ history?.projectDesc }}</p>
+            </div>
+            <div
+              class="col-12"
+              *ngIf="
+                history?.androidLink || history?.iosLink || history?.webUrl
+              "
+            >
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-auto">
+                <button
+                  class="btn androidAppRef align-items-center"
+                  *ngIf="history?.androidLink"
+                  (click)="openLink(history?.androidLink)"
+                >
+                  <i class="fab fa-android fontAwesomeIcon"></i>
+                  Get Android App
+                </button>
+              </div>
+              <div class="col-12 col-sm-12 col-md-auto">
+                <button
+                  class="btn iosAppRef"
+                  (click)="openLink(history?.iosLink)"
+                  *ngIf="history?.iosLink"
+                >
+                  <i class="fab fa-app-store-ios fontAwesomeIcon"></i>
+                  Get IOS App
+                </button>
+              </div>
+              <div class="col-12 col-sm-12 col-md-auto">
+                <button
+                  class="btn websiteRef"
+                  (click)="openLink(history?.webUrl)"
+                  *ngIf="history?.webUrl"
+                >
+                  <i class="fas fa-globe-asia fontAwesomeIcon"></i>
+                  Visit Website
+                </button>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

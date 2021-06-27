@@ -1,0 +1,81 @@
+.hobbiesContainer {
+  padding: 20px;
+  background-color: #ffffff;
+
+  #hobbiesCarousel {
+    margin: 20px;
+    .carousel-indicators {
+      position: absolute;
+      bottom: -50px;
+      button {
+        background-color: var(--primary-color);
+      }
+    }
+
+    .card {
+      background-color: #f2f2f2;
+      border: none;
+
+      .card-body {
+        .card-title {
+          color: #313131;
+          font-weight: 600;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .fontAwesomeIcon {
+            margin-right: 8px;
+          }
+        }
+        .description {
+          text-align: center;
+          line-height: 25px;
+          margin-top: 30px;
+        }
+      }
+    }
+
+    .card:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-style: solid;
+      border-color: var(--primary-color) #fff;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .card:before {
+      border-width: 0 20px 20px 0;
+    }
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .card-body {
+      height: 250px;
+    }
+  }
+
+  @media only screen and (min-width: 481px) and (max-width: 1024px) {
+    .card-body {
+      height: 180px;
+    }
+  }
+
+  @media only screen and (min-width: 1025px) {
+    .card-body {
+      height: 150px;
+    }
+  }
+
+  @media only screen and (min-width: 769px) {
+    .description {
+      font-size: 18px;
+    }
+    .card:before {
+      border-width: 0 25px 25px 0;
+    }
+  }
+}

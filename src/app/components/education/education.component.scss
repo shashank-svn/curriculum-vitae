@@ -1,0 +1,83 @@
+.education-container {
+  padding: 20px;
+  background-color: #f2f2f2;
+
+  .card {
+    border-radius: 10px;
+    margin: 10px 0px;
+
+    .card-title {
+      background-color: var(--primary-color);
+      width: fit-content;
+      padding: 6px;
+      position: relative;
+      left: -26px;
+      color: #ffffff;
+      -webkit-box-shadow: 5px 5px 10px #666;
+      -moz-box-shadow: 5px 5px 10px #666;
+      box-shadow: 5px 5px 10px #666;
+
+      .periodDiv {
+        color: #ffffff;
+        font-weight: 600;
+      }
+    }
+
+    .card-title:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-top: 10px solid var(--primary-color);
+      border-left: 10px solid transparent;
+      left: 0px;
+      bottom: -9px;
+      opacity: 0.9;
+    }
+
+    .card-subtitle {
+      margin: 15px 0px;
+
+      .course,
+      .university {
+        color: #313131;
+        font-weight: 600;
+      }
+      .fa-user-graduate {
+        margin-right: 10px;
+      }
+      .fa-university {
+        margin-right: 4px;
+      }
+      .fontAwesomeIcon {
+        margin-left: 2px;
+      }
+    }
+
+    .description {
+      line-height: 25px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .periodDiv,
+    .course,
+    .university,
+    .description {
+      font-size: 16px;
+    }
+    .course,
+    .university {
+      padding-left: 0;
+    }
+  }
+
+  @media only screen and (min-width: 769px) {
+    .periodDiv,
+    .course,
+    .university,
+    .description {
+      font-size: 18px;
+    }
+  }
+}

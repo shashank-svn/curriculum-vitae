@@ -1,0 +1,35 @@
+<div class="education-container">
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <h5 class="header">Education</h5>
+    </div>
+    <div
+      class="col-12 col-sm-12 col-md-4 d-flex justify-content-center"
+      *ngFor="let education of educationArr"
+    >
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">
+            <div class="periodDiv">{{ education?.duration }}</div>
+          </h5>
+          <h6 class="card-subtitle mb-2 text-muted">
+            <div class="row">
+              <div class="col-12 d-flex align-items-center">
+                <i class="fas fa-user-graduate fontAwesomeIcon"></i>
+                <span class="course">{{ education?.course }}</span>
+              </div>
+
+              <div class="col-12 d-flex align-items-center">
+                <i class="fas fa-university fontAwesomeIcon"></i>
+                <span class="university">{{ education?.institution }}</span>
+              </div>
+            </div>
+          </h6>
+          <p class="card-text description">
+            {{ education?.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
