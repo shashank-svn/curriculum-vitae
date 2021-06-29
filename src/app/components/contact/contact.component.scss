@@ -1,0 +1,67 @@
+.contactContainer {
+  padding: 20px;
+  background-color: #f2f2f2;
+
+  .subHeader {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .description {
+    margin-top: 0px;
+    text-align: center;
+    line-height: 25px;
+  }
+
+  .socialAppIcon {
+    margin: 0px 10px;
+  }
+
+  .contactType {
+    line-height: 25px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #313131;
+  }
+
+  .contactValue {
+    color: #6e6e6e;
+    line-height: 25px;
+  }
+
+  a {
+   margin-bottom: 1rem;
+   text-decoration: none;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .contactIcon {
+      font-size: 30px;
+    }
+    .socialAppIcon {
+      font-size: 25px;
+    }
+    .contactType {
+      font-size: 15px;
+    }
+    .contactValue {
+      font-size: 15px;
+    }
+  }
+
+  @media only screen and (min-width: 769px) {
+    .contactIcon {
+      font-size: 35px;
+    }
+    .socialAppIcon {
+      font-size: 25px;
+    }
+    .contactType {
+      font-size: 16px;
+    }
+   .contactValue {
+    font-size: 16px;
+   }
+  }
+}

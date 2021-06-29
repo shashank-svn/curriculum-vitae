@@ -15,4 +15,9 @@ export class AppComponent {
 
     document.getElementById("scrollBar").style.width = scrolled + "%";
   }
+
+  scrollToContactSection() {
+   let el = document.getElementById('contact');
+   el.scrollIntoView();
+  }
 }

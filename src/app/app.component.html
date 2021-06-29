@@ -4,10 +4,10 @@
   </div>
   <section id="cover">
     <div class="overlay"></div>
-  <app-cover></app-cover>
+    <app-cover></app-cover>
   </section>
   <section id="about">
-    <app-about></app-about>
+    <app-about (srollToContact) = "scrollToContactSection()"></app-about>
   </section>
   <section id="skills">
     <app-skills></app-skills>
@@ -15,13 +15,13 @@
   <section id="experience">
     <app-experience></app-experience>
   </section>
-  <!-- <div class="personal-projects">
-    <app-personal-projects></app-personal-projects>
-  </div> -->
   <section id="education">
     <app-education></app-education>
   </section>
   <section id="hobbies">
     <app-hobbies></app-hobbies>
+  </section>
+  <section id="contact">
+    <app-contact></app-contact>
   </section>
 </div>

@@ -166,7 +166,8 @@
       }
     }
 
-    .workHistoryContainer:last-child {
+    .workHistoryContainer:last-child,
+    .workHistoryContainer:nth-last-child(2) {
       .briefcaseIcon {
         left: 315px;
       }

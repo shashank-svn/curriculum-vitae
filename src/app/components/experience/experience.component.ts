@@ -39,13 +39,13 @@ export class ExperienceComponent implements OnInit {
       company: "Robosoft Technologies",
       androidLink: "https://play.google.com/store/apps/details?id=com.itimf.jeeth"
     },
-    //  {
-    //   projectName: "Glam",
-    //   projectDesc: "It is a vdhavjhavdjhavdjhsdvajsvdjlhasdaljhdvlajhdadavdkja",
-    //   role: "Web Application Developer",
-    //   period: "May 2019 - Jun 2019",
-    //   company: "Robosoft Technologies"
-    // },
+     {
+      projectName: "Glam",
+      projectDesc: "Funnel Music is a platform built on Angular that allows its primary users; managers, to support their artists by allowing them to connect through network of professionals to create music products under the shared outcome agreement(SOA). Once the manager has agreements in place, Funnel platform can release funds to the artist, manager and professionals involved",
+      role: "Web Application Developer",
+      period: "May 2019 - Jun 2019",
+      company: "Robosoft Technologies"
+    },
      {
       projectName: "Huffy Byke",
       projectDesc: "The Huffy Corporation is a US based supplier of bicycles. The project requirement was to build CMS web portal for its client management. The CMS Admin console web application was built on Angular.",

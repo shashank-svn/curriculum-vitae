@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 interface ProfileData {
   key: string,
@@ -12,6 +12,7 @@ interface ProfileData {
 export class AboutComponent implements OnInit {
 
   profile: ProfileData[];
+  @Output() srollToContact = new EventEmitter<string>();
   constructor() { }
 
   ngOnInit() {
@@ -44,6 +45,10 @@ export class AboutComponent implements OnInit {
 
   openMyCv() {
     window.open('assets/files/SHASHANK_CV.pdf', '_blank')
+  }
+
+  scrollToContactSection() {
+    this.srollToContact.emit('scrollToContact');
   }
 
 }
