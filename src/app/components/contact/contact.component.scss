@@ -35,6 +35,7 @@
   .copyrightIcon {
     position: relative;
     left: -3px;
+    top: 5px;
   }
 
   a {
@@ -52,14 +53,13 @@
     .contactType {
       font-size: 15px;
     }
-    .contactValue,
-    .copyrightTag,
-    .designByTag {
+    .contactValue {
       font-size: 15px;
     }
 
-    .copyrightIcon {
-      top: 5px;
+    .copyrightTag,
+    .designByTag {
+      font-size: 14px;
     }
   }
 
@@ -73,18 +73,17 @@
     .contactType {
       font-size: 16px;
     }
-   .contactValue,
+   .contactValue {
+    font-size: 16px;
+   }
+
    .copyrightTag,
    .designByTag {
-    font-size: 16px;
+    font-size: 15px;
    }
 
    .copyrightTag {
      border-right: 1px solid #6e6e6e;
-   }
-
-   .copyrightIcon {
-    top: 3px;
    }
   }
 }
