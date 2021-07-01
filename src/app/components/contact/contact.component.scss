@@ -25,9 +25,16 @@
     color: #313131;
   }
 
-  .contactValue {
+  .contactValue,
+  .copyrightTag,
+  .designByTag {
     color: #6e6e6e;
     line-height: 25px;
+  }
+
+  .copyrightIcon {
+    position: relative;
+    left: -3px;
   }
 
   a {
@@ -45,8 +52,14 @@
     .contactType {
       font-size: 15px;
     }
-    .contactValue {
+    .contactValue,
+    .copyrightTag,
+    .designByTag {
       font-size: 15px;
+    }
+
+    .copyrightIcon {
+      top: 5px;
     }
   }
 
@@ -60,8 +73,18 @@
     .contactType {
       font-size: 16px;
     }
-   .contactValue {
+   .contactValue,
+   .copyrightTag,
+   .designByTag {
     font-size: 16px;
+   }
+
+   .copyrightTag {
+     border-right: 1px solid #6e6e6e;
+   }
+
+   .copyrightIcon {
+    top: 3px;
    }
   }
 }
