@@ -28,7 +28,7 @@ export class AboutComponent implements OnInit {
         value: "Mysore"
       }, {
         key: "Nationality",
-        value: "India"
+        value: "Indian"
       }
     ]
   }
