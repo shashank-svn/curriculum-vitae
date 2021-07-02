@@ -21,7 +21,7 @@ export class AboutComponent implements OnInit {
         key: "Name",
         value: "Shashank S V N"
       }, {
-        key: "Birthday",
+        key: "Date of Birth",
         value: "6th March, 1997"
       }, {
         key: "Place of Birth",
