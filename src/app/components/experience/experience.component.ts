@@ -32,8 +32,8 @@ export class ExperienceComponent implements OnInit {
       iosLink: "https://apps.apple.com/in/app/axis-mutual-fund-sip-elss-mf/id1509062818",
       webUrl: "https://www.axismf.com/"
     }, {
-      projectName: "ITI Mutual Fund",
-      projectDesc: "ITI Mutual Fund Application was built on Ionic and Angular Framework targeting web portal and mobile applications(Android and IOS). It is a distributor application. The application helps to initiate and manage client's investments",
+      projectName: "ITI Mutual Fund App",
+      projectDesc: "ITI Mutual Fund Application was built on Ionic and Angular Framework targeting web portal and mobile applications(Android and IOS). It is a distributor application. The application helps to initiate and manage client's investments.",
       role: "Hybrid Application Developer",
       period: "Jun 2019 - Dec 2019",
       company: "Robosoft Technologies",
@@ -41,7 +41,7 @@ export class ExperienceComponent implements OnInit {
     },
      {
       projectName: "Glam",
-      projectDesc: "Funnel Music is a platform built on Angular that allows its primary users; managers, to support their artists by allowing them to connect through network of professionals to create music products under the shared outcome agreement(SOA). Once the manager has agreements in place, Funnel platform can release funds to the artist, manager and professionals involved",
+      projectDesc: "Funnel Music is a platform built on Angular that allows its primary users; managers, to support their artists by allowing them to connect through network of professionals to create music products under the shared outcome agreement(SOA). Once the manager has agreements in place, Funnel platform can release funds to the artist, manager and professionals involved.",
       role: "Web Application Developer",
       period: "May 2019 - Jun 2019",
       company: "Robosoft Technologies"

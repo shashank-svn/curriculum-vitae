@@ -23,7 +23,7 @@ export class EducationComponent implements OnInit {
         course: "Bachelor of Engineering",
         institution: "PES College of Engineering",
         duration: "2014-2018",
-        description: "I pursued my engineering in Electronics and Comunication from PES College of Engineering, Mandya. I have overall CGPA of 9.17 in my bachelor's degree."
+        description: "I pursued my engineering in Electronics and Communication from PES College of Engineering, Mandya. I have overall CGPA of 9.17 in my bachelor's degree."
       }, {
         course: "Pre-University",
         institution: "Jawahar Navodaya Vidyalaya, Mysore",
