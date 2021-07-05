@@ -44,7 +44,7 @@ export class AboutComponent implements OnInit {
   }
 
   openMyCv() {
-    window.open('assets/files/SHASHANK_CV.pdf', '_blank')
+    window.open('assets/files/Resume_Shashank.pdf', '_blank')
   }
 
   scrollToContactSection() {
